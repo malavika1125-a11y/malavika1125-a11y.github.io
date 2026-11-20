@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malavika PP — Aspiring UI/UX Designer</title>
+<meta name="description" content="Portfolio and learning journal of Malavika PP, an aspiring UI/UX designer training at Zoople, Kannur.">
+<meta property="og:title" content="Malavika PP — Aspiring UI/UX Designer">
+<meta property="og:image" content="assets/profile/photo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1ea;--ink:#232323;--char:#1d1d1f;--muted:#6b665f;--line:#ddd5c8;--accent:#c4573a;--accent2:#b8924a;--card:#fffdf9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font-family:"Inter","Helvetica Neue",Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(246,241,234,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+.logo{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:1.25rem;text-decoration:none}
+.logo span{color:var(--accent)}
+nav a{margin-left:26px;text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+nav a:hover,nav a.on{color:var(--ink);border-color:var(--accent)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,rgba(196,87,58,.22),transparent 45%),radial-gradient(circle at 5% 100%,rgba(184,146,74,.14),transparent 40%),var(--char);color:#f6f1ea;padding:92px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:.76rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--accent2);margin-bottom:22px}
+.eyebrow::before{content:"";width:38px;height:1px;background:var(--accent2)}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.4rem);margin-bottom:24px}
+.hero h1 em{color:var(--accent);font-style:italic}
+.hero p.lead{color:#cfc8bc;max-width:500px;margin-bottom:34px;font-size:1.04rem}
+.btn{display:inline-block;padding:14px 28px;border:1px solid var(--accent);background:var(--accent);color:#fff;text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;transition:all .25s}
+.btn:hover{background:transparent;color:var(--accent);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#f6f1ea;border-color:#58585c;margin-left:10px}
+.btn.ghost:hover{border-color:var(--accent2);color:var(--accent2)}
+.pw{position:relative;max-width:380px;margin-left:auto;width:100%}
+.pw::before{content:"";position:absolute;inset:20px -20px -20px 20px;border:1px solid var(--accent2);border-radius:200px 200px 14px 14px}
+.portrait{position:relative;z-index:1;aspect-ratio:4/5;border-radius:200px 200px 14px 14px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;background:repeating-linear-gradient(135deg,#252527,#252527 12px,#2a2a2d 12px,#2a2a2d 24px);text-align:center;padding:20px;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.portrait b{font-family:"Playfair Display",Georgia,serif;font-size:4rem;color:var(--accent2)}
+.portrait small{color:#8d877d;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.badge{position:absolute;z-index:2;left:-28px;bottom:44px;background:var(--bg);color:var(--ink);padding:12px 18px;box-shadow:0 14px 30px rgba(0,0,0,.3);font-size:.78rem;line-height:1.4;border-left:3px solid var(--accent)}
+.badge b{display:block;font-family:"Playfair Display",Georgia,serif;font-size:1rem}
+.marquee{background:var(--accent);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0}
+.track{display:inline-block;animation:scroll 32s linear infinite}
+.track span{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:1.15rem;margin:0 22px}
+.track i{font-style:normal;opacity:.6}
+@keyframes scroll{to{transform:translateX(-50%)}}
+section{padding:96px 0;border-bottom:1px solid var(--line)}
+.label{display:flex;align-items:center;gap:12px;font-size:.74rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.label em{font-family:"Playfair Display",Georgia,serif;font-style:normal;font-size:1.1rem;color:var(--accent2);letter-spacing:0}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:30px;max-width:720px}
+.about p{max-width:680px;margin-bottom:16px;font-size:1.06rem}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{border:1px solid var(--line);background:var(--card);padding:7px 16px;font-size:.82rem;border-radius:99px}
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{position:relative;background:var(--card);border:1px solid var(--line);padding:28px;transition:transform .3s,box-shadow .3s,border-color .3s;overflow:hidden}
+.card::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--accent);transition:width .35s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgba(0,0,0,.08);border-color:#cfc5b4}
+.card:hover::after{width:100%}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.93rem}
+.tag{display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:12px}
+.post{padding-top:56px}
+.post .num{position:absolute;top:10px;right:20px;font-family:"Playfair Display",Georgia,serif;font-size:3.4rem;font-weight:700;color:var(--line);line-height:1}
+.post .date{font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.status{display:inline-block;margin-top:16px;font-size:.74rem;border:1px dashed var(--accent2);color:var(--accent2);padding:3px 12px}
+.slot{position:relative;aspect-ratio:4/3;border:1.5px dashed #cdbfa9;background:var(--card);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:.84rem;padding:14px;overflow:hidden;transition:border-color .25s}
+.slot:hover{border-color:var(--accent)}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sub{color:var(--muted);margin:-14px 0 30px;max-width:620px}
+.gh{font-size:1.15rem;margin:8px 0 16px}
+.timeline{border-left:2px solid var(--line);padding-left:30px;max-width:660px}
+.timeline li{list-style:none;position:relative;margin-bottom:24px;font-size:1.03rem}
+.timeline li::before{content:"";position:absolute;left:-38px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
+.timeline li.next::before{background:var(--bg);border:2px solid var(--accent2)}
+.contact{background:var(--char);color:#f6f1ea;border:0}
+.contact a.row{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid #3a3a3d;text-decoration:none;font-family:"Playfair Display",Georgia,serif;font-size:1.35rem;transition:color .2s,padding .25s}
+.contact a.row::after{content:"\2197";font-family:Arial,sans-serif;color:var(--accent2);transition:transform .25s}
+.contact a.row:hover{color:var(--accent2);padding-left:12px}
+.contact a.row:hover::after{transform:translate(4px,-4px)}
+.contact a.row small{display:block;font-family:"Inter",Arial,sans-serif;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#8d877d}
+footer{background:#141415;color:#8d877d;text-align:center;padding:28px;font-size:.8rem}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+.art{background:var(--card);border:1px solid var(--line);overflow:hidden;cursor:zoom-in;transition:transform .3s,box-shadow .3s}
+.art:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgba(0,0,0,.1)}
+.art img{display:block;width:100%;height:auto;background:#eee}
+.art figcaption{padding:16px 20px}
+.art figcaption b{display:block;font-family:"Playfair Display",Georgia,serif;font-size:1.1rem}
+.art figcaption span{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+#ps-gallery{align-items:start}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,20,21,.93);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:100%;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+@media(max-width:820px){
+ .hero .wrap{grid-template-columns:1fr;gap:56px}.hero{padding:56px 0 64px}
+ .pw{margin:0 auto 20px;max-width:300px}
+ .badge{left:-10px}
+ .g3,.g2{grid-template-columns:1fr}
+ nav a{margin-left:14px;font-size:.68rem;letter-spacing:.08em}
+ section{padding:60px 0}
+ .btn.ghost{margin:12px 0 0}
+ .pw::before{inset:14px -12px -14px 12px}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.track{animation:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+ <a class="logo" href="#top">Malavika<span>.</span></a>
+ <nav><a href="#about">About</a><a href="#journal">Journal</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <div>
+  <p class="eyebrow">Aspiring UI/UX Designer · Kannur, India</p>
+  <h1>Learning to design things that feel <em>clear</em> and human.</h1>
+  <p class="lead">I'm Malavika, currently training at Zoople. This is my portfolio and learning journal — posters, vector work and early UI/UX practice, shared as I grow.</p>
+  <a class="btn" href="#journal">Read the journal</a><a class="btn ghost" href="https://www.behance.net/malavikapp1" target="_blank" rel="noopener">View Behance</a>
+ </div>
+ <div class="pw">
+  <div class="portrait" id="portrait"><b>MP</b><small>Photo slot — add assets/profile/photo.png</small></div>
+  <div class="badge"><b>Malavika PP</b>UI/UX trainee · Zoople</div>
+ </div>
+</div></div>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+ <span>Adobe Photoshop</span><span><i>✦</i></span><span>Adobe Illustrator</span><span><i>✦</i></span><span>Typography</span><span><i>✦</i></span><span>Color Theory</span><span><i>✦</i></span><span>Layout &amp; Composition</span><span><i>✦</i></span><span>UI/UX Fundamentals</span><span><i>✦</i></span>
+ <span>Adobe Photoshop</span><span><i>✦</i></span><span>Adobe Illustrator</span><span><i>✦</i></span><span>Typography</span><span><i>✦</i></span><span>Color Theory</span><span><i>✦</i></span><span>Layout &amp; Composition</span><span><i>✦</i></span><span>UI/UX Fundamentals</span><span><i>✦</i></span>
+</div></div>
+
+<section id="about" class="about"><div class="wrap reveal">
+ <p class="label"><em>01</em> About</p><h2>Building my foundation, one layout at a time.</h2>
+ <p>I'm an aspiring UI/UX designer based in Kannur, India, training at Zoople. My focus is visual communication and user-centered design — turning ideas into clear, intentional digital experiences.</p>
+ <p>Right now I'm working through the fundamentals that good design rests on: layout, typography, colour and composition, using Adobe Photoshop and Illustrator.</p>
+ <div class="meta"><span class="chip">Student at Zoople</span><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">UI/UX fundamentals</span></div>
+</div></section>
+
+<section id="learning"><div class="wrap reveal">
+ <p class="label"><em>02</em> Currently learning</p><h2>Skills in progress</h2>
+ <div class="grid g3">
+  <div class="card"><span class="tag">Tool</span><h3>Adobe Photoshop</h3><p>Poster and social-media creative design.</p></div>
+  <div class="card"><span class="tag">Tool</span><h3>Adobe Illustrator</h3><p>Vector artwork and layout fundamentals.</p></div>
+  <div class="card"><span class="tag">Craft</span><h3>UI/UX Fundamentals</h3><p>User-centered thinking, hierarchy, interface basics.</p></div>
+  <div class="card"><span class="tag">Craft</span><h3>Typography</h3><p>Type pairing, hierarchy and readability.</p></div>
+  <div class="card"><span class="tag">Craft</span><h3>Color Theory</h3><p>Contrast, palettes and mood.</p></div>
+  <div class="card"><span class="tag">Craft</span><h3>Layout &amp; Composition</h3><p>Grid, balance, whitespace and visual flow.</p></div>
+ </div>
+</div></section>
+
+<section id="journal"><div class="wrap reveal">
+ <p class="label"><em>03</em> Learning journal</p><h2>Notes from the learning path</h2>
+ <p class="sub">A blog-style space for what I'm studying. Entries are topics I'm working on — full write-ups will be added as I finish them.</p>
+ <div class="grid g2">
+  <article class="card post"><span class="num">01</span><p class="date">Typography</p><h3>Pairing type: what I'm learning about hierarchy</h3><p>Exploring how size, weight and spacing guide a reader's eye through a poster or screen.</p><span class="status">Write-up coming soon</span></article>
+  <article class="card post"><span class="num">02</span><p class="date">Color theory</p><h3>Choosing palettes with intent</h3><p>Notes on contrast, harmony and how colour sets the mood of a design.</p><span class="status">Write-up coming soon</span></article>
+  <article class="card post"><span class="num">03</span><p class="date">Photoshop</p><h3>From idea to poster</h3><p>Walking through how a poster takes shape — layout, imagery and finishing touches.</p><span class="status">Write-up coming soon</span></article>
+  <article class="card post"><span class="num">04</span><p class="date">UI/UX</p><h3>First steps into interface design</h3><p>What changes when moving from posters to screens: users, flows and usability.</p><span class="status">Write-up coming soon</span></article>
+ </div>
+</div></section>
+
+<section id="work"><div class="wrap reveal">
+ <p class="label"><em>04</em> Selected work</p><h2>Gallery</h2>
+ <p class="sub">Poster designs from my Photoshop practice. Illustrator work is coming soon. More on <a href="https://www.behance.net/malavikapp1" target="_blank" rel="noopener">Behance</a>.</p>
+ <h3 class="gh">Photoshop</h3>
+ <div class="grid g2" style="margin-bottom:36px" id="ps-gallery"></div>
+ <h3 class="gh">Illustrator</h3>
+ <div class="grid g3" style="margin-bottom:36px" data-gallery="illustrator">
+  <div class="slot">Illustrator artwork 01<br>assets/illustrator/01.jpg</div><div class="slot">Illustrator artwork 02<br>assets/illustrator/02.jpg</div><div class="slot">Illustrator artwork 03<br>assets/illustrator/03.jpg</div>
+ </div>
+ <h3 class="gh">Future UI/UX projects <small style="font-family:Inter,Arial,sans-serif;font-weight:400;font-size:.8rem;color:var(--muted)">(planned, not yet completed)</small></h3>
+ <div class="grid g2">
+  <div class="card"><h3>Mobile app UI concept</h3><p>Planned learning project.</p></div>
+  <div class="card"><h3>Website &amp; landing-page design</h3><p>Planned learning project.</p></div>
+  <div class="card"><h3>Wireframes &amp; user journeys</h3><p>Planned learning project.</p></div>
+  <div class="card"><h3>Small design system</h3><p>Planned learning project.</p></div>
+ </div>
+</div></section>
+
+<section id="journey"><div class="wrap reveal">
+ <p class="label"><em>05</em> Learning journey</p><h2>Where I am, and what's next</h2>
+ <ul class="timeline">
+  <li>Started exploring visual design and creative fundamentals</li>
+  <li>Learning Adobe Photoshop — posters and social creatives</li>
+  <li>Learning Adobe Illustrator — vectors and layout</li>
+  <li>Studying UI/UX principles and user-centered design</li>
+  <li class="next">Next: moving into interface and product design</li>
+ </ul>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap reveal">
+ <p class="label" style="color:var(--accent2)"><em>06</em> Contact</p><h2>Let's connect</h2>
+ <a class="row" href="https://www.linkedin.com/in/malavika-pp-96b257448/" target="_blank" rel="noopener"><span><small>LinkedIn</small>malavika-pp</span></a>
+ <a class="row" href="https://www.behance.net/malavikapp1" target="_blank" rel="noopener"><span><small>Behance</small>behance.net/malavikapp1</span></a>
+ <a class="row" href="mailto:malavika1125@gmail.com"><span><small>Email</small>malavika1125@gmail.com</span></a>
+ <a class="row" href="https://github.com/malavika1125-a11y" target="_blank" rel="noopener"><span><small>GitHub</small>@malavika1125-a11y</span></a>
+</div></section>
+</main>
+<footer>&copy; <span id="yr"></span> Malavika PP · Always learning, always creating.</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var p=new Image();p.onload=function(){var el=document.getElementById('portrait');el.innerHTML='';p.alt='Portrait of Malavika PP';el.appendChild(p)};p.src='assets/profile/photo.png';
+document.querySelectorAll('[data-gallery]').forEach(function(g){
+ var f=g.dataset.gallery;g.querySelectorAll('.slot').forEach(function(s,i){
+  var im=new Image();im.onload=function(){s.innerHTML='';im.alt=f+' artwork '+(i+1);s.appendChild(im)};im.src='assets/'+f+'/0'+(i+1)+'.jpg';
+ });
+});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+var ps=[{f:'forest-day.jpg',t:'World Forest Day',d:'Awareness poster'},{f:'journey-of-life.jpg',t:'Journey of Life',d:'Quote layout'},{f:'cocosip.png',t:'CocoSip \u2014 Tender Happiness',d:'Product poster'},{f:'coffee-world.png',t:'Coffee World',d:'Caf\u00e9 poster'}];
+var psg=document.getElementById('ps-gallery');var lb=document.createElement('div');lb.className='lb';lb.innerHTML='<img alt="">';document.body.appendChild(lb);
+lb.onclick=function(){lb.classList.remove('on')};document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+ps.forEach(function(a){var fg=document.createElement('figure');fg.className='art';var im=new Image();im.loading='lazy';im.src='assets/photoshop/'+a.f;im.alt=a.t+' - '+a.d;var cap=document.createElement('figcaption');var sp=document.createElement('span');sp.textContent=a.d;var b=document.createElement('b');b.textContent=a.t;cap.appendChild(sp);cap.appendChild(b);fg.appendChild(im);fg.appendChild(cap);fg.onclick=function(){lb.firstChild.src=im.src;lb.firstChild.alt=im.alt;lb.classList.add('on')};psg.appendChild(fg)});
+var links=document.querySelectorAll('nav a');
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('section').forEach(function(s){so.observe(s)});
+</script>
+</body>
+</html>
